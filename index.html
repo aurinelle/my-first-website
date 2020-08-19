@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EK Enterprise Homepage</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="left-side">
+          <div class="nav-link-wrapper active-nav-link">
+            <a href="index.html">Home</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="about.html">About</a>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <div class="brand">
+            <h2>Aurinelle Taboudi</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/coffeeTime.jpg);"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/toastability.png" alt="" />
+              </div>
+
+              <div class="subtitle">
+                <a href="coffee.html">For love of all things Coffee</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/bankingImage.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/devcamp.png" alt="" />
+              </div>
+              <div class="subtitle">
+                <a href="professionalExperience.html"
+                  >Professional Experience</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/education.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/dailysmarty.png" alt="" />
+              </div>
+              <div class="subtitle">
+                <a href="education.html">Education path</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/sneakersBlog.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/shop-hacker.png" alt="" />
+              </div>
+              <div class="subtitle">
+                <a href="fashion.html">Sneak in</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/tech.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/crondose.png" alt="" />
+              </div>
+              <div class="subtitle">
+                <a href="tech.html">Techie stuff</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/architectureImage.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/devtrunk.png" alt="" />
+              </div>
+              <div class="subtitle">
+                <a href="architecture.html">Architectural dreaming</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer" role="contentinfo">
+        <div class="container"></div>
+        <a href="google.com">google</a>
+        <a href="https://www.linkedin.com/in/aurinelle-taboudi-947a9569/"
+          >linkedin</a
+        >
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const portfolioItems = document.querySelectorAll(".portfolio-item-wrapper");
+    portfolioItems.forEach((portfolioItem) => {
+      portfolioItem.addEventListener("mouseover", () => {
+        portfolioItem.childNodes[1].classList.add("img-darken");
+      });
+
+      portfolioItem.addEventListener("mouseout", () => {
+        portfolioItem.childNodes[1].classList.remove("img-darken");
+      });
+    });
+  </script>
+</html>
